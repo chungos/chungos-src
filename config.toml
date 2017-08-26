@@ -1,0 +1,129 @@
+baseurl = "https://chungos.github.io/"
+languageCode = "en-us"
+title = "༼つ◕_◕༽つ"
+theme = "hugo-strata-theme"
+disqusShortname = "spf13"
+# Enable Google Analytics by inserting your tracking code
+# Define how many posts should appear on a site
+paginate = 10
+
+[params]
+	# To provide some metadata for search engines feel free to add a few
+    # information about you and your website.
+	name = "Senor Chungos"
+	description = "Mellifluous Maskirovka & Gonzo Gastronautics"
+
+	# Format dates with Go's time formatting
+	date_format = "2006-01-02"
+
+	# Add read time estimates in the format "X min read"
+	show_read_time = false
+
+	# Add custom assets with their paths relative to the static folder
+	custom_js   = [] 
+	custom_css  = [] 
+
+
+	[params.sidebar]
+		# Replace the avatar with a picture of your own under static/images
+		avatar = "avatar.jpg"
+		# Use Markdown to format the string. This works nearly all over the theme
+		bio = "**Hailz**, electron eminations from meine biodome."
+		# The icons will be shown if you enter your username
+		twitter = "https://twitter.com/chungos"
+		github = "https://github.com/chungos"
+
+		copyright = [
+			"&copy; Owen Chung",
+			"Images: [Unsplash](//unsplash.com/)"
+		]
+
+
+	[params.about]
+		hide  = false
+		title = "Mellifluous Maskirovka & Gonzo Gastronautics."
+		content = "Bacon smokin, 6 String slinging, Image mashin<br />Nosh-Reverse Engineering, Bit-boshing-borkin, <br /> Deving the Ops & ヽ(｀⌒´メ)ノ"
+
+
+	[params.portfolio]
+		hide  = false
+		title = "Recent image mashin"
+
+		# The images and thumbnails are stored under static/images
+		# Create and change subfolders as you like
+		[[params.portfolio.gallery]]
+			image = "fulls/01.jpg"
+			thumb = "thumbs/01.jpg"
+			title = "Race special."
+			description = "Colour fun in GIMP."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/02.jpg"
+			thumb = "thumbs/02.jpg"
+			title = "Control Room."
+			description = "We iz ye olde filters."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/03.jpg"
+			thumb = "thumbs/03.jpg"
+			title = "Nailing."
+			description = "Wow pinky-purples."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/04.jpg"
+			thumb = "thumbs/04.jpg"
+			title = "Olde Drivers."
+			description = "Windex and Mr.Jif have some work here."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/05.jpg"
+			thumb = "thumbs/05.jpg"
+			title = "Red handles not fork candles."
+			description = "I mean four candles."
+
+		[[params.portfolio.gallery]]
+			image = "fulls/06.jpg"
+			thumb = "thumbs/06.jpg"
+			title = "Washin the day away."
+			description = "Random saturation and washing."
+
+#	[params.recentposts]
+#		hide  = false
+#		title = "Recent blog posts"
+
+		[params.contact]
+				hide  = true
+				title = "Get In Touch"
+				content = "Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor."
+
+				# Since this template is static, the contact form uses www.formspree.io as a
+				# proxy. The form makes a POST request to their servers to send the actual
+				# email. Visitors can send up to a 1000 emails each month for free.
+			    #
+			    # What you need to do for the setup?
+			    #
+			    # - set your email address under 'email' below
+			    # - upload the generated site to your server
+			    # - send a dummy email yourself to confirm your account
+			    # - click the confirm link in the email from www.formspree.io
+			    # - you're done. Happy mailing!
+				# email = "name@email.com"
+
+				[params.contact.form]
+					# Set custom strings for the form if your native
+					# language isn't English
+					name = "Name"
+					email = "Email"
+					message = "Message"
+					submit = "Send message"
+
+# Menu links that appear on the left sidebar
+[[menu.main]]
+	name = "Home"
+	url  = "/"
+	weight = 10
+
+#[[menu.main]]
+#	name = "Blog"
+#	url  = "post/"
+#	weight = 0
